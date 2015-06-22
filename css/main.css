@@ -187,6 +187,14 @@ font-size: 150%;
 color: rgba(40,0,145, 1);
 }
 
+
+.tile strong { 
+  position: relative;
+  left: 10px;
+  color: #CCC;
+  font-size: 90%;
+}
+
 .tile p {
 font-size: 90%;
 margin-top: 10px;
@@ -195,6 +203,8 @@ margin-top: 10px;
 .tile img {
 box-shadow: 0 0 5px #CCC;	      
 border-top: 3px solid rgba(40,0,145, 1); 
+border-left: 1px solid #CCC;
+border-right: 1px solid #CCC;
 
 }
 
@@ -202,7 +212,6 @@ border-top: 3px solid rgba(40,0,145, 1);
 padding: 10px;
 border: 1px solid #CCC;
 box-shadow: 0 0 5px #CCC;
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(0,0,0,.05) 100%);
 }
 
 .carousel-caption {
@@ -423,3 +432,16 @@ background: rgba(10,0,85, .5);
   left: 55px;
   top: -10px;
 }
+
+      .breadcrumb {
+	      background: rgba(0,0,0,.3); 
+	      padding: 0px;
+	      border-radius: 0px;
+	      text-shadow: 0 0 9px #333;
+
+position: relative;
+  top: -65px;
+  left: -40px;
+  min-width: 358px;
+  padding: 10px 40px;      
+  }
