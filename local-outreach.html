@@ -36,8 +36,10 @@
 	<link rel="stylesheet" type="text/css" href="./css/component.css" />
 
     <link rel="stylesheet" href="./css/main.css">
+    
+    <!--
     <link rel="import" href="./modal-test.html">
-
+    -->
     
         <style>
       body {
@@ -364,12 +366,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 									<div>
 										<h4>Reaching Out To All</h4>
 										<ul>
-											<li><a href="#">Local Outreach</a></li>
+											<li><a href="local-outreach.html">Local Outreach</a></li>
 											<li><a href="#">After School</a></li>
-											<li><a href="#">Community Partners</a></li>
-											<li><a href="#">Global Partners</a></li>
+											<li><a href="community-involvement.html">Community Partners</a></li>
+											<li><a href="global-partnerships.html">Global Partners</a></li>
 											<li><a href="#">Events</a></li>
 										</ul>
+
 
 									</div>
 
@@ -518,7 +521,7 @@ Contact: Pastor Tobey Hall | recovery@alcf.net</p>
             <p>ALCF's Homeless Ministry strives to encourage those in despair and convey hope through acts of service that exemplify Christ's unconditional love, proclaim the saving message of the Gospel and welcome those in need of finding their true home in Christ. </p>
             </article>
                         
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#homelessModal">View details &raquo;</a></p>
 
           </div>
 
@@ -630,6 +633,74 @@ Contact: Pastor Tobey Hall | recovery@alcf.net</p>
 
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+
+
+
+
+
+
+
+<!-----------------------------------
+ //
+ // Modals
+ //
+ //---------------------------------->
+<div class="modal fade" id="homelessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-image: url('./assets/images/modal_CP_NCHM.jpg'); background-position: center center; background-size: cover; height: 200px; ">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <h2>Homeless</h2>
+      
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-md-5 col-lg-5">
+			
+			<h3>General Ways to Serve</h3>
+            <ul>
+			  <li>Preparing and serving food</li>
+			  <li>Distributing toiletries and clothing (<a href="http://www.alcf.net/pages/page.asp?page_id=163781">donation information</a>)</li>
+			  <li>Organizing street and shelter activities throughout the year</li>
+			  <li>Collecting and praying over written prayer requests monthly</li>
+			  <li>Assisting with transportation to monthly events</li>
+
+            </ul>
+			<p><a href="sub-index.html">Learn more about this.</a></p>      
+
+            
+            <br><br>
+            
+            <h3>Contact Information</h3>
+            <p>
+	           <strong>Rosemarie Nola</strong><br>
+<a href="#">homeless@alcf.net</a>
+            </p>
+            
+            
+	 	          
+          </div>
+			
+          <div class="col-md-7 col-lg-7">
+			<iframe width="500px" height="300px" src="https://www.youtube.com/embed/sm-NjYuEKus" frameborder="0" allowfullscreen></iframe>	          
+          </div>
+	        
+        </div>
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- End of Modals ------------------------------------------>
+<!----------------------------------------------------------->
+
 
 
 
@@ -773,16 +844,16 @@ Contact: Pastor Tobey Hall | recovery@alcf.net</p>
     <script src="./js/main.js"></script>
 
 
+ <!--
  <script>
     var link = document.querySelector('link[rel="import"]');
     var content = link.import;
 
-    // Grab DOM from warning.html's document.
     var el = content.querySelector('.modal');
 
     document.body.appendChild(el.cloneNode(true));
   </script>
-    
+  -->
     
   </body>
 </html>
