@@ -2,6 +2,10 @@ body {
   font-family: OpenSans, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+a:focus {
+  outline: none;	
+}
+
 .btn {
   border-radius: 2px;
 }
