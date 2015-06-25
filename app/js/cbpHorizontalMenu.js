@@ -10,20 +10,24 @@
  */
 var cbpHorizontalMenu = (function() {
 
-	var $listItems = $( '#cbp-hrmenu > ul > li' ),
-		$menuItems = $listItems.children( 'a' ),
-		$body = $( 'body' ),
+
+  // Apparently nested selectors don't work with web components heh
+
+	var $body = $( 'body' ),
 		current = -1;
+		
+		
 
 	function init() {
-		$menuItems.on( 'click', open );
-		$listItems.on( 'click', function( event ) { event.stopPropagation(); } );
+	  console.log($('#cbp-hrmenu > ul > li').children( 'a' ));
+	
+		$('#cbp-hrmenu > ul > li').children( 'a' ).on( 'click', open );
+		$('#cbp-hrmenu > ul > li').on( 'click', function( event ) { event.stopPropagation(); } );
 	}
 
 	function open( event ) {
-
 		if( current !== -1 ) {
-			$listItems.eq( current ).removeClass( 'cbp-hropen' );
+			$('#cbp-hrmenu > ul > li').eq( current ).removeClass( 'cbp-hropen' );
 		}
 
 		var $item = $( event.currentTarget ).parent( 'li' ),
@@ -44,7 +48,7 @@ var cbpHorizontalMenu = (function() {
 	}
 
 	function close( event ) {
-		$listItems.eq( current ).removeClass( 'cbp-hropen' );
+		$('#cbp-hrmenu > ul > li').eq( current ).removeClass( 'cbp-hropen' );
 		current = -1;
 	}
 
