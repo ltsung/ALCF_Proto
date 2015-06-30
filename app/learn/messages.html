@@ -18,7 +18,7 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src=".../.../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,12 +29,15 @@
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/ss-social-regular/webfonts/ss-social-regular.css">
+    <link rel="stylesheet" href="../assets/ss-social-regular/webfonts/ss-social-regular.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="./css/default.css" />
-	<link rel="stylesheet" type="text/css" href="./css/component.css" />
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="import" href="../partials/nav-black.html">
+    <link rel="import" href="../partials/modal.html">
+
     
         <style>
       body {
@@ -91,7 +94,7 @@
 	    #hero-image {
 	    	height: 400px;
 	    	width: 100%;
-        background: url('./assets/images/page_InternationalPartners.jpg') center center no-repeat; 
+        background: url('../assets/images/page_InternationalPartners.jpg') center center no-repeat; 
         background-size: cover;
         background-position-y: -20px;
         position: absolute;
@@ -309,148 +312,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+    <alcf-nav></alcf-nav>
 
-                <a class="navbar-brand" href="index.html" style="background-image: url('./assets/images/ALCF_logo_black.png'); background-size: 100%; width: 100px; height: 50px; left: 40px; position: absolute; z-index: 9;">
-                </a>
-				<nav id="cbp-hrmenu" class="cbp-hrmenu">
-					<ul>
-						<li>
-							<a href="#">Visit</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Welcome</h4>
-										<ul>
-											<li><a href="#">Sunday Morning Worship</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>About</h4>
-										<ul>
-											<li><a href="#">Who We Are</a></li>
-											<li><a href="#">Exploring Membership</a></li>
-											<li><a href="#">Staff</a></li>
-										</ul>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">Connect</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner">
-									<div>
-										<h4>Worshipping God</h4>
-										<ul>
-											<li><a href="#">Sunday Service</a></li>
-											<li><a href="#">Morning Prayer</a></li>
-											<li><a href="#">Intercessory Prayer</a></li>
-										</ul>
-
-										<h4>Serving One Another</h4>
-										<ul>
-											<li><a href="#">WSM</a></li>
-										</ul>
-
-									</div>
-									<div>
-										<h4>Growing in Christ</h4>
-										<ul>
-											<li><a href="#">Growth Groups</a></li>
-											<li><a href="#">Children &amp; Youth</a></li>
-											<li><a href="#">Fellowship Groups</a></li>
-											<li><a href="#">Recovery/Support Groups</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Reaching Out To All</h4>
-										<ul>
-											<li><a href="local-outreach.html">Local Outreach</a></li>
-											<li><a href="#">After School</a></li>
-											<li><a href="community-involvement.html">Community Partners</a></li>
-											<li><a href="global-partnerships.html">Global Partners</a></li>
-											<li><a href="#">Events</a></li>
-										</ul>
-
-									</div>
-
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">Care</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner"> 
-									<div style="height: 350px;">
-										<h4>Support</h4>
-										<ul>
-											<li><a href="#">One-to-one</a></li>
-											<li><a href="#">Groups</a></li>
-										</ul>
-										
-										<div style="width: 300px; height: 200px; position: relative; top: -105px; left: 200px;">
-										<img src="./assets/images/tile_GrowthGroups.jpg" alt="Generic placeholder image" width="100%" height="150">
-          
-          <div style="color: #333; font-size: 90%; margin-top: 20px;">
-            <h2 style="font-size: 150%; margin-bottom: 5px;">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>   	
-										</div>
-									</div>
-									
-									
-									<div style="width: 300px; height: 200px; position: relative; top: -305px; left: 550px;">
-										<img src="./assets/images/tile_serve.jpg" alt="Generic placeholder image" width="100%" height="150">
-          
-          <div style="color: #333; font-size: 90%; margin-top: 20px;">
-            <h2 style="font-size: 150%; margin-bottom: 5px;">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>   	
-										</div>
-									</div>
-
-									
-									
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-							</div>
-						</li>
-						<li>
-							<a href="#">Learn</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Messages</h4>
-										<ul>
-											<li><a href="#">Catch the Bullet</a></li>
-											<li><a href="#">Snoopydoo</a></li>
-											<li><a href="#">Fallen Angel</a></li>
-											<li><a href="#">Sui Maker</a></li>
-											<li><a href="#">Wave Master</a></li>
-											<li><a href="#">Golf Pro</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Class@ALCF</h4>
-										<ul>
-											<li><a href="#">Gadget Finder</a></li>
-											<li><a href="#">Green Tree Express</a></li>
-										</ul>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-
-					</ul>
-				</nav>
-
-              <ul class="nav navbar-nav user-cta">
-                <li><a href="#serve">Volunteer</a></li>
-                <li><a id="give-cta" href="#give">Give</a></li>
-              </ul>
-
-      </div>
-    </div>
     
     
     <!-- Hero
@@ -752,12 +615,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
     <script src="http://getbootstrap.com/assets/js/vendor/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/cbpHorizontalMenu.min.js"></script>
+    <script src="../js/cbpHorizontalMenu.min.js"></script>
 
 
 
-    <script src="./bower_components/readmore/readmore.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../bower_components/readmore/readmore.min.js"></script>
+    <script src="../js/main.js"></script>
     
     <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
     <script src="http://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>    
