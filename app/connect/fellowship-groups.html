@@ -1,24 +1,12 @@
-<!--
- Color code horizontal dropdown
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>ALCF Prototype</title>
-
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="../.../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,16 +17,15 @@
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/ss-social-regular/webfonts/ss-social-regular.css">
+    <link rel="stylesheet" href="../assets/ss-social-regular/webfonts/ss-social-regular.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
 
-	<link rel="stylesheet" type="text/css" href="./css/default.css" />
-	<link rel="stylesheet" type="text/css" href="./css/component.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="import" href="../partials/nav-black.html">
+    <link rel="import" href="../partials/modals.html">
 
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="import" href="./modal-test.html">
-
-    
         <style>
       body {
         font-family: OpenSans, "Helvetica Neue", Helvetica, sans-serif;
@@ -94,7 +81,7 @@
 	    #hero-image {
 	    	height: 400px;
 	    	width: 100%;
-        background: url('./assets/images/Test.jpg') center center no-repeat; 
+        background: url('../assets/images/Test.jpg') center center no-repeat; 
         background-size: cover;
         position: absolute;
         top: 0;
@@ -302,133 +289,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
       }
    
     </style>
+
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-
-                <a class="navbar-brand" href="index.html"><h3 style="position: relative; top: -10px; color: #333;">Abundant Life<br>Christian Fellowship</h3></a>
-				<nav id="cbp-hrmenu" class="cbp-hrmenu">
-					<ul>
-						<li>
-							<a href="#">Visit</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Welcome</h4>
-										<ul>
-											<li><a href="#">Sunday Morning Worship</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>About</h4>
-										<ul>
-											<li><a href="#">Who We Are</a></li>
-											<li><a href="#">Exploring Membership</a></li>
-											<li><a href="#">Staff</a></li>
-										</ul>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">Connect</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner">
-									<div>
-										<h4>Worshipping God</h4>
-										<ul>
-											<li><a href="#">Sunday Service</a></li>
-											<li><a href="#">Morning Prayer</a></li>
-											<li><a href="#">Intercessory Prayer</a></li>
-										</ul>
-
-										<h4>Serving One Another</h4>
-										<ul>
-											<li><a href="#">WSM</a></li>
-										</ul>
-
-									</div>
-									<div>
-										<h4>Growing in Christ</h4>
-										<ul>
-											<li><a href="#">Growth Groups</a></li>
-											<li><a href="#">Children &amp; Youth</a></li>
-											<li><a href="#">Fellowship Groups</a></li>
-											<li><a href="#">Recovery/Support Groups</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Reaching Out To All</h4>
-										<ul>
-											<li><a href="#">Local Outreach</a></li>
-											<li><a href="#">After School</a></li>
-											<li><a href="#">Community Partners</a></li>
-											<li><a href="#">Global Partners</a></li>
-											<li><a href="#">Events</a></li>
-										</ul>
-
-									</div>
-
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">Care</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Support</h4>
-										<ul>
-											<li><a href="#">One-to-one</a></li>
-											<li><a href="#">Groups</a></li>
-										</ul>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">Learn</a>
-							<div class="cbp-hrsub">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Messages</h4>
-										<ul>
-											<li><a href="#">Catch the Bullet</a></li>
-											<li><a href="#">Snoopydoo</a></li>
-											<li><a href="#">Fallen Angel</a></li>
-											<li><a href="#">Sui Maker</a></li>
-											<li><a href="#">Wave Master</a></li>
-											<li><a href="#">Golf Pro</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Class@ALCF</h4>
-										<ul>
-											<li><a href="#">Gadget Finder</a></li>
-											<li><a href="#">Green Tree Express</a></li>
-										</ul>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-
-					</ul>
-				</nav>
-
-              <ul class="nav navbar-nav user-cta">
-                <li><a href="#serve">Volunteer</a></li>
-                <li><a id="give-cta" href="#give">Give</a></li>
-              </ul>
-
-
-      </div>
-    </div>
     
+    <alcf-nav></alcf-nav>
     
+     
     <!-- Hero
     ================================================== -->
     <div id="hero">
@@ -439,10 +306,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
           <ol class="breadcrumb">
 			  <li><a href="#">Home</a></li>
 			  <li><a href="#">Connect</a></li>
-			  <li class="active">Local Outreach</li>
+			  <li class="active">Fellowship Groups</li>
 	   	  </ol>
                     
-          <h1 style="text-shadow: 0 0 3px #333;">Local Outreach<br>encourages reaching out to your neighbor.</h1>
+          <h1 style="text-shadow: 0 0 3px #333;">Fellowship Groups<br>encourages reaching out to your neighbor.</h1>
           
 
         </div>
@@ -467,39 +334,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 
 
 
-	        <h2 style="margin-bottom: 10px;">Evangelism</h2>
+	        <h2 style="margin-bottom: 10px;">Fellowship Groups</h2>
 			<p>
-ALCF’s Evangelism ministry believes that sharing our faith is an integral part of our life in Christ. Altar Prayer Team members come alongside individuals who commit to following Jesus Christ or are re-dedicating their lives at the end of each worship service. Our goal is to help them find the spiritual support and fellowship they need to grow in Christ, and to equip them to reach out to others with the Good News that they have embraced for themselves.</p>
+Whether you are single or married, a mother, or a young adult, we want to help you to live abundantly through the ministries we offer. Regardless of where you are in your spiritual journey, our church family is open to you.</p>
 
-<p>For detailed information about becoming an Altar Prayer Team member, click here.</p>
-
-			<p>Contact: Pastor Tobey Hall | <a href="#" style="color: #337ab7;">evangelism@alcf.net</a></p>
-			
-			
-			<br>
-			
-	        <h2 style="margin-bottom: 10px;">Outreach</h2>
-			<p>
-			Our outreach ministries are focused on taking the Good News of Jesus Christ into communities in need including jails, prisons, juvenile halls, elder care homes, public schools, and to the homeless living out on the streets and in shelters. Our efforts also include partnership assistance with local organizations and help with community service projects.
-			</p>
-			
-			<p>Contact: Pastor Tobey Hall | <a href="#" style="color: #337ab7;">outreach@alcf.net</a></p>
-						 
         </div>
 
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_TheBridge.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="../assets/images/tile_MTO_logo.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <article>
-            <h2>The Bridge</h2>
-            <p>"The Bridge" is ALCF’s monthly recovery event that takes place on first Saturdays. A night of lively music and sharing with a focused message about recovery, this inspiring event is attended by 100+ people. Refreshments and childcare provided.</p>          
+            <h2>Mom's Time Out</h2>
+            <p>Moms’ Time Out seeks to provide moms, raising young children, a much needed "time out" in a safe and nurturing environment. Gatherings are shaped around Bible-based worship and teaching, and discussion and prayer with mentor moms, over a light brunch. In our desire to build up and strengthen families, our goal is for moms to return home refreshed and ready to prayerfully meet everyday challenges. Childcare provided.</p>          
             
             <p>
-Contact: Pastor Tobey Hall | recovery@alcf.net</p>
+Contact: Vicky Gorin | mto_admin@alcf.net | 650.625.1500, x133</p>
             
             </article>
             <div style="height: 55px; width: 20px; border: none; box-shadow: none;"></div>
@@ -510,29 +363,31 @@ Contact: Pastor Tobey Hall | recovery@alcf.net</p>
 
         </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_Homeless.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="../assets/images/tile_Singles.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <article>
-            <h2>Homeless</h2>
-            <p>ALCF's Homeless Ministry strives to encourage those in despair and convey hope through acts of service that exemplify Christ's unconditional love, proclaim the saving message of the Gospel and welcome those in need of finding their true home in Christ. </p>
+            <h2>Singles</h2>
+            <p>If you have never been married, are divorced, widowed or are a single parent, then this is the community for you. Join us for our weekly Bible study and monthly Singles events. Our hope is that you will find joy, laughter, motivation, and support to purposefully live for Christ in every area of your life.</p>
             </article>
                         
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#homeless">View details &raquo;</a></p>
 
           </div>
 
 
         </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_Jail.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="../assets/images/tile_YoungAdults.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <article>
-            <h2>Prison (AfterCare)</h2>
-            <p>ALCF’s Jail, Juvenile Hall and Prison Ministry is a valuable asset to the local community. By encouraging inmates in local correctional facilities through the Word, worship and prayer, our ministry teams have seen the lives of men, women and youth fully surrendered to our Savior and Lord, Jesus Christ.</p>
+            <h2>Young Adults</h2>
+            <p>Whether you are married or single and in your 20s or 30s, we want to connect you to a small group community where you can meet new friends, deepen relationships and grow in your relationship with God. Join one of our small groups where we seek to be faithful followers of Christ as we study God's Word, grow with each other, support one another and share life together.</p>
+
+<p>Contact: Dami Wusu |  damilare.wusu@alcf.net | | 650.625.1500, x?</p>
             </article>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#prison">View details &raquo;</a></p>
 
           </div>
 
@@ -541,113 +396,58 @@ Contact: Pastor Tobey Hall | recovery@alcf.net</p>
       </div><!-- /.row -->
       <div class="row" style="margin-top: -28px;">
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_ElderCare.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="../assets/images/tile_men.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <article>
-            <h2>Elder Care</h2>
-            <p>Over 60% of nursing home residents do not receive regular visits from family and friends. Through ALCF’s ElderCare ministry, we have an opportunity to pray and fellowship with seniors at nursing care facilities who may feel forgotten or are unable to attend a regular church service. Training requirements vary based on your chosen role and facility site. </p>   
+            <h2>Men</h2>
+            <p>We are committed to providing men with the resources to grow in Christ through small group communities. This is one of the best places to find fellowship with other men who are facing the same challenges you are in today's busy world. Join us as we seek to become the husbands, fathers, brothers and friends God intends us to be, through fellowship, discipleship, service and intimacy with God. </p>   
             </article>         
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#elder-care">View details &raquo;</a></p>
 
           </div>
 
 
         </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_JOBScourse.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="../assets/images/tile_WOW.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <article>
-            <h2>JOBS</h2>
-            <p>JOBS is a ministry that offers a host of services and courses that help prepare individuals who are under-employed, transitioning to a new field of employment, or returning to the workplace. JOBS Ministry is NOT designed to provide job placement, but we do offer courses, employment preparation services and guidance, as follows:</p>   
+            <h2>Women of Worth!</h2>
+            <p>We seek to provide a SAFE (Spiritual, Authentic, Friendly, Encouraging) environment for all women at our Bible studies and monthly WOW! events. We want every woman to experience a life-changing relationship with Jesus Christ and to deepen her intimacy with God and others. Our hope is that as women we will be equipped to glorify God through spiritual growth and service to Him—in our families, community, and world in which we live.</p>   
             </article>         
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#jobs">View details &raquo;</a></p>
 
           </div>
 
 
         </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_AngelTree_logo.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="../assets/images/tile_OASIS.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <article>
-            <h2>Angel Tree</h2>
-            <p>Angel Tree is a program of Prison Fellowship. ALCF partners with Angel Tree to reach out with the love of Christ to the children and families of prisoners. This unique ministry gives the entire ALCF community an opportunity to participate by helping to meet their physical, emotional, and spiritual needs during the Christmas season through gifts, church services and special programs.
+            <h2>Older Adults Strong In Service (OASIS)</h2>
+            <p>If you are 50+ and want to be a part of a community that encourages, builds up, and fosters growth in your relationship with Christ, then this is the place for you. Join us for regular Bible study, fellowship, teaching and prayer. God continues to use us whether we are a retiree, grandparent, couple, single or widow/widower.
 </p>            
+
+<p>Contact: Cheryl Degree | outreach@alcf.net</p>
             </article>
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <div style="height: 55px; width: 20px; border: none; box-shadow: none;"></div>
+            
 
           </div>
 
 
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-      <div class="row" style="margin-top: -28px;">
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_KidsClub_logo.jpg" alt="Generic placeholder image" width="100%" height="200">
-          
-          <div>
-            <article>
-            <h2>Kids Club</h2>
-            <p>ALCF's Kids Club is a biblically based program offered at Brentwood Academy, a public elementary school in East Palo Alto. This free, after school program is designed to help students in what they most often lack: a consistent, strong role model and mentor who is willing to spend time with them so they can be helped academically, socially, spiritually and emotionally. The goal is not to just teach them biblical lessons and values, but to help them apply God’s Word to situations and circumstances in their own lives given the challenges they face at home, in their neighborhoods and at school.  
-</p>            
-            </article>
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-
-          </div>
-
-
-        </div><!-- /.col-lg-4 -->
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_Outreach_InspireU_logo.jpg" alt="Generic placeholder image" width="100%" height="200">
-          
-          <div>
-            <article>
-            <h2>InspireU</h2>
-            <strong>Youth Basketball, 180 Degrees</strong>
-            <p>Inspire U attracts junior high and high school students (6th through 10th grade boys and girls) from underserved neighborhoods (within the East Palo Alto and Mid-Peninsula communities) with sports programs that inspire student athletes to pursue success on the court as well as the classroom.</p>
-            </article>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-
-          </div>
-
-
-        </div><!-- /.col-lg-4 -->
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_OpInt.jpg" alt="Generic placeholder image" width="100%" height="200">
-          
-          <div>
-            <article>
-            <h2>Operation Intercession</h2>
-            <p>Operation Intercession is committed to praying for, supporting and encouraging enlisted military personnel currently engaged in warfare and peace keeping abroad. Support is also extended to the families left behind. We express our love, appreciation and support in several other ways:</p>  
-            </article>          
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-
-          </div>
-
-
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
     </div><!-- /.container -->
     
-
+    <alcf-modals></alcf-modals>
 
       <!-- FOOTER -->
       <footer>
@@ -751,38 +551,25 @@ Contact: Pastor Tobey Hall | recovery@alcf.net</p>
 
       </footer>
       
-      
-      
-      
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="http://getbootstrap.com/assets/js/vendor/holder.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/cbpHorizontalMenu.min.js"></script>
+  </body>
+  
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="../js/cbpHorizontalMenu.js"></script>
 	<script>
+      addEventListener('HTMLImportsLoaded', function() {
 		$(function() {
 	    	cbpHorizontalMenu.init();
 		});
+	  });
 	</script>
-    <script src="./bower_components/readmore/readmore.min.js"></script>
-    <script src="./js/main.js"></script>
 
+    <script src="../bower_components/readmore/readmore.min.js"></script>
+    <script src="../js/main.js"></script>
 
- <script>
-    var link = document.querySelector('link[rel="import"]');
-    var content = link.import;
-
-    // Grab DOM from warning.html's document.
-    var el = content.querySelector('.modal');
-
-    document.body.appendChild(el.cloneNode(true));
-  </script>
-    
-    
-  </body>
 </html>
