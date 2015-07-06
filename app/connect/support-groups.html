@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../.../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/ss-social-regular/webfonts/ss-social-regular.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="import" href="../partials/nav-black.html">
+    <link rel="import" href="../partials/modals.html">
+
+        <style>
+      body {
+        font-family: OpenSans, "Helvetica Neue", Helvetica, sans-serif;
+      }
+      
+      
+      .nav li a {
+        color: #333 !important;
+        font-size: 110%;
+      }
+      
+      .navbar-wrapper .container {
+        width: 100% !important;
+        
+/*        left: 7px ; */
+      }
+      
+      .navbar-inverse {
+        border-color: none !important;
+        background: rgba(0,0,0,0);
+        border-radius: 0 !important;
+        border-bottom: rgba(0,0,0,0);
+      }
+      
+      .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        background: rgba(0,0,0,0);
+        border-bottom: 3px solid #FFF;
+        padding-bottom: 5px;
+      }
+      
+      .navbar-brand {
+        width: 300px; 
+        padding-left: 23px; 
+      }
+      
+      .navbar-toggle {
+        border: 0;
+        border-radius: 0;
+      }
+      
+      .row {
+	    padding: 0 40px 40px 40px;
+	    margin: 0;
+      }
+      
+
+      
+      #hero {
+	      height: 560px;
+	      width: 100%;
+      }
+    
+	    #hero-image {
+	    	height: 400px;
+	    	width: 100%;
+        background: url('../assets/images/Test.jpg') center center no-repeat; 
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        -webkit-filter: blur(.5px);
+
+	    }
+	  
+	    #hero-image:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image:  radial-gradient(ellipse at center, rgba(0,147,130,0.42) 0%,rgba(0,96,107,1) 100%);
+  
+      }
+        
+      h1, h2, h3, h4, h5, h6 {
+  	    margin: 0;
+      }
+      
+      
+      h1 {
+  	    line-height: 45px;  
+      }  
+        
+      h3 {
+  	    font-size: 15px;
+  	    line-height: 18px;
+      }
+      
+      h5 {
+        font-weight: bold;
+        margin-bottom: 5px;      
+      }
+      
+      h1, h3, h5, h6 {
+     	color: #FFF;
+  	    z-index: 2;
+      } 
+      
+      
+      .field {
+        width: 300px;
+        height: 43px;
+        border: 2px solid rgba(255, 255, 255, .8);
+        background-color: rgba(10,0,85, .5);
+        box-shadow: rgba(255, 255, 255, 0.09) 0px 0px 0px 1px;
+        -webkit-transition: background-color 250ms ease-in-out;
+        transition: background-color 250ms ease-in-out;
+        font-family: museo-sans, sans-serif;
+        color: white;
+        font-size: 14px;
+        padding-left: 10px;
+        margin-right: 10px;
+      }
+  
+      .button.hero-button {
+        width: 125px;
+        background-color: #3bc492;
+        box-shadow: #086818 0px 3px 0px 0px;
+        color: white;
+        border: 0;
+        border-radius: 2px;
+        padding: 10px;
+      }
+
+      #soc-media {
+        color: #FFF; 
+
+/*        position: relative; 
+        top: 340px; 
+        left: 0px;
+        */ 
+        z-index: 2; 
+        font-size: 30px;
+        list-style: none;
+        position: relative;
+        top: 10px;
+        
+      }
+      
+      #soc-media li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+      
+      .carousel, .carousel .item {
+        height: 400px;
+      }
+      
+      .user-cta {
+	     font-size: 90%;
+      }
+      
+      
+      .news-event {
+	    text-align: left !important;
+      }
+      
+      .news-event h2 {
+	    position: relative;
+	    left: 10px;
+	    margin-top: 7px;
+	    font-size: 150%;
+      }
+      
+      .news-event p {
+	    font-size: 90%;
+	    margin-top: 10px;
+      }
+      
+      .news-event img {
+        box-shadow: 0 0 5px #CCC;	      
+        border-top: 3px solid rgba(40,0,145, 1); 
+
+      }
+
+      .news-event div {
+	    padding: 10px;
+        border: 1px solid #CCC;
+        box-shadow: 0 0 5px #CCC;
+      }
+      
+      .carousel-caption {
+	    right: 10%;
+		left: 53%;
+		padding-bottom: 50px;
+		text-align: left;
+		text-shadow: none;
+		color: rgba(40,0,145, 1);
+      }
+      
+      .carousel-caption h1 {
+	    color: rgba(40,0,145, 1);
+      }
+      
+      .carousel .item {
+background: rgb(204,204,204); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(239,239,239,1) 3%, rgba(219,219,219,1) 57%, rgba(214,214,214,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(3%,rgba(239,239,239,1)), color-stop(57%,rgba(219,219,219,1)), color-stop(100%,rgba(214,214,214,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+
+      }
+      
+      .carousel-indicators {
+	    bottom: 3px;
+      }
+      
+      .carousel-indicators li {
+	    border: 1px solid rgba(40,0,145, 1);    
+      }
+      
+      .carousel-indicators li.active {
+      	   background-color: rgba(40,0,145, 1);
+
+      }
+      
+      .carousel-control {
+	    width: 7%;
+	    color: rgba(40,0,145, 1);
+	    opacity: 1;
+	    text-shadow: none;
+      }
+      
+      .carousel-control.left, .carousel-control.right {
+	    background-image: none !important; 
+      }
+      
+      .carousel-inner > .item > img {
+		position: absolute;
+		top: 50px;
+		left: 100px;
+		width: 500px;
+		min-width: 0;
+		height: 300px;
+      }
+
+
+      .modal-header {
+	     border-bottom: none;
+      }
+      
+      .modal-body {
+	     padding: 25px;
+      }
+      
+      .cbp-hrmenu li a {
+	     color: #333;
+      }
+      
+      #give-cta {
+	      background: rgba(0,147,130,0.42);
+      }
+      
+
+      .active {
+	     font-weight: bold;
+	     color: #FFF !important;
+      }
+   
+    </style>
+
+  </head>
+  <body>
+    
+    <alcf-nav></alcf-nav>
+    
+     
+    <!-- Hero
+    ================================================== -->
+    <div id="hero">
+      
+      <div class="container" style="top: 155px; left: 8px; position: absolute; z-index: 2; ">
+      
+        <div class="col-md-6 col-lg-6">  
+          <ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Connect</a></li>
+			  <li class="active">Support Groups</li>
+	   	  </ol>
+                    
+          <h1 style="text-shadow: 0 0 3px #333;">Support Groups<br>encourages reaching out to your neighbor.</h1>
+          
+
+        </div>
+        <div class="col-md-6 col-lg-6"></div> 
+      </div>
+      
+      
+
+      <div id="hero-image" style="margin-top: 90px;"></div>      
+
+    </div>
+
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <div style="padding: 0 55px 20px 55px; color: #333;">
+
+
+
+	        <h2 style="margin-bottom: 10px;">Fellowship Groups</h2>
+			<p>ALCF Support Groups provide a safe environment for those experiencing life's challenges in the areas of moms raising young children, recovery from addiction/addiction-specific behaviors (more on recovery), coping with or supporting those with mental health issues, and healing from the past.</p>
+
+<p>These biblically based groups are designed to foster trust, love and openness amongst participants. Groups are led by leaders who have personal experience or educational training in these areas.</p>
+
+<p>Our intent is that you will experience God's love, hope, wisdom and healing through encouragement and accountability.</p>
+
+<p>If you are seeking one-to-one biblical counseling or coaching, <a href="#">click here</a>.</p><br><br>
+
+<small><strong>* Indicates pre-registration requirement</strong>.  Otherwise all groups operate on a drop-in basis.</small>
+        </div>
+
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_MTO_logo.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>Anger Management For Men*</h2>
+            <p>Moms’ Time Out seeks to provide moms, raising young children, a much needed "time out" in a safe and nurturing environment. Gatherings are shaped around Bible-based worship and teaching, and discussion and prayer with mentor moms, over a light brunch. In our desire to build up and strengthen families, our goal is for moms to return home refreshed and ready to prayerfully meet everyday challenges. Childcare provided.</p>          
+            
+            <p>
+Contact: Vicky Gorin | mto_admin@alcf.net | 650.625.1500, x133</p>
+            
+            </article>
+            <div style="height: 55px; width: 20px; border: none; box-shadow: none;"></div>
+
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_Singles.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>Coping With Attitude For Women*</h2>
+            <p>If you have never been married, are divorced, widowed or are a single parent, then this is the community for you. Join us for our weekly Bible study and monthly Singles events. Our hope is that you will find joy, laughter, motivation, and support to purposefully live for Christ in every area of your life.</p>
+            </article>
+                        
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#homeless">View details &raquo;</a></p>
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_YoungAdults.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>Fixed On Him For Women</h2>
+            <p>Whether you are married or single and in your 20s or 30s, we want to connect you to a small group community where you can meet new friends, deepen relationships and grow in your relationship with God. Join one of our small groups where we seek to be faithful followers of Christ as we study God's Word, grow with each other, support one another and share life together.</p>
+
+<p>Contact: Dami Wusu |  damilare.wusu@alcf.net | | 650.625.1500, x?</p>
+            </article>            
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#prison">View details &raquo;</a></p>
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <div class="row" style="margin-top: -28px;">
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_men.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>Food For The Spirit For Women*</h2>
+            <p>We are committed to providing men with the resources to grow in Christ through small group communities. This is one of the best places to find fellowship with other men who are facing the same challenges you are in today's busy world. Join us as we seek to become the husbands, fathers, brothers and friends God intends us to be, through fellowship, discipleship, service and intimacy with God. </p>   
+            </article>         
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#elder-care">View details &raquo;</a></p>
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_WOW.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>HELP! Support</h2>
+            <p>We seek to provide a SAFE (Spiritual, Authentic, Friendly, Encouraging) environment for all women at our Bible studies and monthly WOW! events. We want every woman to experience a life-changing relationship with Jesus Christ and to deepen her intimacy with God and others. Our hope is that as women we will be equipped to glorify God through spiritual growth and service to Him—in our families, community, and world in which we live.</p>   
+            </article>         
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#jobs">View details &raquo;</a></p>
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_OASIS.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>MTO</h2>
+            <p>If you are 50+ and want to be a part of a community that encourages, builds up, and fosters growth in your relationship with Christ, then this is the place for you. Join us for regular Bible study, fellowship, teaching and prayer. God continues to use us whether we are a retiree, grandparent, couple, single or widow/widower.
+</p>            
+
+<p>Contact: Cheryl Degree | outreach@alcf.net</p>
+            </article>
+            <div style="height: 55px; width: 20px; border: none; box-shadow: none;"></div>
+            
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <div class="row" style="margin-top: -28px;">
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_men.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>PrayerWorks</h2>
+            <p>We are committed to providing men with the resources to grow in Christ through small group communities. This is one of the best places to find fellowship with other men who are facing the same challenges you are in today's busy world. Join us as we seek to become the husbands, fathers, brothers and friends God intends us to be, through fellowship, discipleship, service and intimacy with God. </p>   
+            </article>         
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#elder-care">View details &raquo;</a></p>
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="tile news-event col-md-4 col-lg-4">
+          <img src="../assets/images/tile_WOW.jpg" alt="Generic placeholder image" width="100%" height="200">
+          
+          <div>
+            <article>
+            <h2>Recovery Bible Study</h2>
+            <p>We seek to provide a SAFE (Spiritual, Authentic, Friendly, Encouraging) environment for all women at our Bible studies and monthly WOW! events. We want every woman to experience a life-changing relationship with Jesus Christ and to deepen her intimacy with God and others. Our hope is that as women we will be equipped to glorify God through spiritual growth and service to Him—in our families, community, and world in which we live.</p>   
+            </article>         
+            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#jobs">View details &raquo;</a></p>
+
+          </div>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="tile news-event col-md-4 col-lg-4">
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
+    </div><!-- /.container -->
+    
+    <alcf-modals></alcf-modals>
+
+      <!-- FOOTER -->
+      <footer>
+
+	      <div class="container" style="padding-left: 0; width: 100%;">
+	      
+	        <div class="row" style="padding: 20px 0;">	        
+	          <div class="col-md-6 col-lg-6" style="padding-left: 0;">
+		        <small>2440 Leghorn Street<br>
+                Mountain View, CA 94043<br></small>
+                <strong>(650) 210-9340</strong>    
+	          </div>              
+              <div class="col-md-6 col-lg-6" style="padding-left: 0; text-align: right;">
+	            <form class="w-clearfix hero-cta-form" id="wf-form-Newsletter" name="wf-form-Newsletter" data-name="Newsletter" style="position: relative; right: -15px;">
+                  <input class="w-input field" type="email" placeholder="Enter your email for weekly updates" name="email" data-name="Email" required="required">
+                  <input class="w-button button hero-button" type="submit" value="Subscribe" data-wait="Please wait...">
+                </form>
+
+              </div>              
+
+            </div>  
+	        
+	        <div class="row sitemap" style="padding: 20px 0 0 0;">
+	          <div class="row" style="padding-left: 0; padding-bottom: 0;">
+			    <div class="col-md-2 col-lg-2" style="padding-left: 0;">
+			      <h5>Visit</h5>
+				  <ul>
+					<li>Sunday Morning Worship</li>
+					<li>About</li>
+					<li>Exploring Membership</li>
+					<li>Staff</li> 
+				  </ul>  
+			    </div> 
+	            <div class="col-md-2 col-lg-2" style="padding-left: 0; padding-bottom: 5px;">
+	              <h5>Connect</h5>
+	              <ul>
+					<li>Sunday Service</li>
+					<li>Morning Prayer</li>
+					<li>Intercessory Prayer</li>
+					<li>Growth Groups</li> 
+					<li>Children &amp; Youth</li>
+					<!--
+					<li>Fellowship Groups</li>
+					<li>Recovery/Support Groups</li>
+					<li>WSM</li>
+
+					<li>Local Outreach</li>
+					<li>After School</li>
+					<li>Community Partners</li>
+					<li>Global Partners</li>
+					<li>Events</li> 
+				    -->
+				  </ul>  
+	            </div> 
+	            <div class="col-md-2 col-lg-2" style="padding-left: 0; padding-bottom: 5px;">
+	              <h5>Care</h5>
+	              <ul>
+		            <li>One-to-One</li>
+		            <li>Groups</li>
+	              </ul>
+	            </div> 
+	            <div class="col-md-2 col-lg-2" style="padding-left: 0; padding-bottom: 5px;">
+	              <h5>Learn</h5>
+	              <ul>
+		            <li>Messages</li>
+		            <li>Classes@ALCF</li>
+	              </ul>
+	            </div>   
+			    <div class="col-md-2 col-lg-2" style="padding-left: 0; padding-bottom: 5px;">
+			      <h5>Volunteer</h5>
+			      <ul>
+				    <li>WSM</li>
+				    <li>Children &amp; Youth</li>
+				    <li>Outreach</li>  
+			      </ul>
+			    </div> 
+	            <div class="col-md-2 col-lg-2" style="padding-left: 0; padding-bottom: 5px;">
+	              <h5>Give</h5>
+	              <ul>
+		            <li>myalcf</li>
+	              </ul>
+	            </div>  	            
+              </div>  
+	        </div>            
+	
+	
+	        <div class="row" style="padding: 20px 0 0 0;">
+		      <div class="col-md-6 col-lg-6" style="padding-left: 0;">              
+	            <small>&copy; 2015 Abundant Life Christian Fellowship</small>
+	          </div>
+	          <div class="col-md-6 col-lg-6" style="text-align: right;">
+	            <ul id="soc-media-footer" class="ss-icon">
+	              <li>&#xF610;</li>
+	              <li>&#xF611;</li>
+	              <li>&#xF641;</li>
+	            </ul>
+	          </div>
+	        </div>
+	
+	      </div>
+
+      </footer>
+      
+  </body>
+  
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="../js/cbpHorizontalMenu.js"></script>
+	<script>
+      addEventListener('HTMLImportsLoaded', function() {
+		$(function() {
+	    	cbpHorizontalMenu.init();
+		});
+	  });
+	</script>
+
+    <script src="../bower_components/readmore/readmore.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</html>
