@@ -25,11 +25,17 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="import" href="../partials/nav-white.html">
     <link rel="import" href="../partials/modals.html">
+    <link rel="import" href="../partials/sitemap.html">
 
 
 <style>
   body {
 	  background: #333;
+  }
+  
+  alcf-sitemap {
+	 position: absolute;
+	 top: 800px;
   }
 </style>  
   </head>
@@ -37,13 +43,15 @@
     <alcf-nav></alcf-nav>
     
     
-    
-      <a style="position: absolute; top: 150px; left: 20px;" class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#homeless">View details &raquo;</a>
+    <a style="position: absolute; top: 150px; left: 20px;" class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#homeless">View details &raquo;</a>
 
 
-      <a style="position: absolute; top: 350px; left: 20px;" class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#prison">View details &raquo;</a>
-    
-      <alcf-modals></alcf-modals>
+    <a style="position: absolute; top: 350px; left: 20px;" class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#prison">View details &raquo;</a>
+
+    <alcf-modals></alcf-modals>
+ 
+
+    <alcf-sitemap></alcf-sitemap>
 
 
   </body>
