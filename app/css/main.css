@@ -445,7 +445,7 @@ background: rgba(10,0,85, .5);
 }
 
 .modal-content a {
-	color: #337ab7;	
+  color: #337ab7;	
 }
 
 .close {
@@ -459,15 +459,14 @@ background: rgba(10,0,85, .5);
   top: -10px;
 }
 
-      .breadcrumb {
-	      background: rgba(0,0,0,.3); 
-	      padding: 0px;
-	      border-radius: 0px;
-	      text-shadow: 0 0 9px #333;
-
-position: relative;
+.breadcrumb {
+  background: rgba(0,0,0,.3); 
+  padding: 0px;
+  border-radius: 0px;
+  text-shadow: 0 0 9px #333;
+  position: relative;
   top: -65px;
   left: -40px;
   min-width: 358px;
   padding: 10px 40px;      
-  }
+}
