@@ -27,6 +27,22 @@
     <link rel="import" href="./partials/modal.html">
     <link rel="import" href="./partials/sitemap.html">
 
+
+<!-- 1. load the webfonts -->
+<link rel="stylesheet" type="text/css" href="./font-test/MyFontsWebfontsKit.css"/>
+
+<!-- 2. set up some css styles using the webfonts -->
+<style type="text/css">
+body { font-family: "Nolan Next Regular"; }
+
+h1, h2, h3, h4, h5 { font-family: "Nolan Next Book" !important; font-weight: bold; }
+.tile h2 { font-family: "Nolan Next Book" !important; font-weight: bold; }
+
+.field { font-family: "Nolan Next Regular" !important; }
+
+</style>
+
+
   </head>
   <body>
     
@@ -36,8 +52,6 @@
     ================================================== -->
     <div id="hero">
       
-      
-      
       <div class="container" style="top: 155px; left: 8px; position: absolute; z-index: 2; ">
         <div class="col-md-6 col-lg-6">              
           <h1>An exciting<br>fellowship of<br>growing believers.</h1><br>
@@ -46,9 +60,6 @@
         </div>
         <div class="col-md-6 col-lg-6"></div> 
       </div>
-      
-      
-      
       
       <div class="container" style="top: 485px; padding-left: 0; position: absolute; z-index: 2; width: 100%;">
         <div class="col-md-6 col-lg-6" style="padding-left: 0;">              
@@ -137,9 +148,6 @@
     </div><!-- /.carousel -->
 
 
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -148,10 +156,6 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-       
-       
-       
-       
         <div class="tile news-event col-md-4 col-lg-4">
           <img src="./assets/images/tile_WOW.jpg" alt="Generic placeholder image" width="100%" height="200">
           
@@ -161,12 +165,9 @@
             <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
 
           </div>
-		 </div><!-- /.col-lg-4 -->
-        
-        
-        
-        
-        
+
+
+        </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
           <img src="./assets/images/tile_baptism.jpg" alt="Generic placeholder image" width="100%" height="200">
           
@@ -316,6 +317,19 @@ Executive Director<br>
     
      
   </body>
+
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=283470(font-family=Nolan+Next+Book)&sid=283471(font-family=Nolan+Next+Bold)&sid=283478(font-family=Nolan+Next+Light)&sid=283482(font-family=Nolan+Next+Regular)&key=5hHOVI2NQU',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
   
 	<!-- Bootstrap core JavaScript
 	================================================== -->
