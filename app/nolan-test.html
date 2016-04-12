@@ -42,7 +42,26 @@ h1, h2, h3, h4, h5 { font-family: "Nolan Next Book" !important; font-weight: bol
 
 </style>
 
+<style>
+  #hero {
+	 height: 380px !important;
+  }
+  
+  #hero-image {
+	 border-top: 3px solid rgba(40,0,145, 1);
 
+	 height: 450px !important;  
+  }
+
+  #hero-image:before {
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);
+  }
+  
+  .field {
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);	  
+  }
+</style>
+      
   </head>
   <body>
     
@@ -61,7 +80,7 @@ h1, h2, h3, h4, h5 { font-family: "Nolan Next Book" !important; font-weight: bol
         <div class="col-md-6 col-lg-6"></div> 
       </div>
       
-      <div class="container" style="top: 485px; padding-left: 0; position: absolute; z-index: 2; width: 100%;">
+      <div class="container" style="top: 365px; padding-left: 0; position: absolute; z-index: 2; width: 100%;">
         <div class="col-md-6 col-lg-6" style="padding-left: 0;">              
           <ul id="soc-media" class="ss-icon">
             <li>&#xF610;</li>
@@ -79,15 +98,24 @@ h1, h2, h3, h4, h5 { font-family: "Nolan Next Book" !important; font-weight: bol
         </div>
       </div>
 
-
-
-      
-      
-
-      <div id="hero-image"></div>      
+     <div id="hero-image"></div>      
 
     </div>
 
+<!--
+    <div class="container">
+
+      <div class="row" style="top: 100px;">
+        <div class="col-md-6 col-lg-6">
+          <h2>Messages</h2>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <h2>Pastor's Pen</h2>
+        </div>
+
+      </div>
+    </div>
+-->
 
     <!-- Carousel
     ================================================== -->
