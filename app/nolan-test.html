@@ -39,7 +39,18 @@ body { font-family: "Nolan Next Regular"; }
 
 h1 { font-family: "Nolan Next Light" !important;  }
 
-h2 { font-family: "Nolan Next Bold" !important;  }
+h2 { font-family: "Nolan Next Bold" !important; color: rgba(40,0,145, 1); }
+
+h3 {
+  font-family: "Nolan Next Bold" !important; 
+  font-size: 150%;
+  color: #555; 
+}
+
+
+.row p {
+  color: #555;
+}
 
 
 .tile h2 { font-family: "Nolan Next Bold" !important; }
@@ -50,7 +61,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
 
 <style>
   #hero {
-	 height: 380px !important;
+	 height: 388px !important;
   }
   
   #hero-image {
@@ -66,6 +77,35 @@ h2 { font-family: "Nolan Next Bold" !important;  }
   .field {
     background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);	  
   }
+  
+  #callouts {
+    width: 100%;
+	height: 740px;
+    padding: 40px;
+
+    background: rgb(204,204,204); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(239,239,239,1) 3%, rgba(219,219,219,1) 57%, rgba(214,214,214,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(3%,rgba(239,239,239,1)), color-stop(57%,rgba(219,219,219,1)), color-stop(100%,rgba(214,214,214,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* W3C */
+
+  }
+  
+  #messages h2 {
+	 position: relative;
+	 margin-top: 20px;
+	 margin-bottom: 10px;
+	 left: 12px;
+  }
+  
+  #callouts h3 {
+	 margin-top: 20px;
+	 margin-bottom: 10px;
+  }
+  
+
 </style>
       
   </head>
@@ -92,6 +132,8 @@ h2 { font-family: "Nolan Next Bold" !important;  }
             <li><a href="https://www.facebook.com/ALCF">&#xF610;</a></li>
             <li><a href="https://twitter.com/alcf">&#xF611;</a></li>
             <li><a href="https://www.instagram.com/alcf_mv/">&#xF641;</a></li>
+            <li><a href="https://www.youtube.com/user/alcf">&#xF630;</a></li>
+            <li><a href="http://bryanloritts.tumblr.com/">&#xF620;</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-6" style="text-align: right; padding-right: 25px;">
@@ -108,20 +150,53 @@ h2 { font-family: "Nolan Next Bold" !important;  }
 
     </div>
 
-<!--
-    <div class="container">
+    <div class="container" id="callouts">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
 
-      <div class="row" style="top: 100px;">
-        <div class="col-md-6 col-lg-6">
-          <h2>Messages</h2>
+	      <div class="col-md-8 col-lg-8">
+            <iframe width="680" height="360" src="https://www.youtube.com/embed/59FiaN6MbjE" frameborder="0" style="margin-bottom: 10px;" allowfullscreen></iframe> 
+	      </div>
+	      
+	      <div class="col-md-4 col-lg-4">
+            <h2>Pastor Bryan's Message</h2>
+            <p>New to ALCF?  Pastor Bryan Loritts has some thoughts to share.</p>                   
+	        <br>
+            <img src="http://www.alcf.net/uploads/RSS_PastorsPen.jpg" style=" border-radius: 4px;">
+
+	      </div>
+
         </div>
-        <div class="col-md-6 col-lg-6">
-          <h2>Pastor's Pen</h2>
+
+        <div id="messages" class="col-md-12 col-lg-12">
+           <h2>Latest Message Series</h2>
+          
+	       <div class="col-md-4 col-lg-4">
+		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_InsanelyBusy_160501-29.jpg'); background-size: cover; border-radius: 4px;"></div>
+		      <div>
+                <h3>Insanely Busy</h3>
+                <p>What the Bible says about stewarding time.</p>            
+		      </div>
+	       </div>
+	       <div class="col-md-4 col-lg-4">
+		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_Jonah_160403-24.jpg'); background-size: cover; border-radius: 4px;"></div>
+		      <div>
+                <h3>Jonah</h3>
+                <p>When God loves you enough to interrupt you.</p>            
+		      </div>
+	       </div>
+	       <div class="col-md-4 col-lg-4">
+		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_Easter2016_160306-27.jpg'); background-size: cover; border-radius: 4px;"></div>
+		      <div>
+                <h3>First Things First</h3>
+                <p>Jesus Above Everything.</p>            
+		      </div>
+	       </div>
+
         </div>
 
       </div>
     </div>
--->
 
     <!-- Carousel
     ================================================== -->
@@ -136,7 +211,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
         <div class="item active">
         
         
-          <img class="first-slide" src="./assets/images/feature_1.jpg" alt="First slide">
+          <img class="first-slide" src="./assets/images/home_loop_ChurchPicnic.jpg" alt="First slide">
 
           <div class="container">
             <div class="carousel-caption">
@@ -148,7 +223,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
         </div>
         <div class="item">
 
-          <img class="second-slide" src="./assets/images/feature_2.jpg" alt="Second slide">
+          <img class="second-slide" src="./assets/images/home_loop_expmbrship.jpg" alt="Second slide">
 
           <div class="container">
             <div class="carousel-caption">
@@ -160,7 +235,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
         </div>
         <div class="item">
 
-          <img class="third-slide" src="./assets/images/feature_1.jpg" alt="Third slide">
+          <img class="third-slide" src="./assets/images/home_loop_GG_static.jpg" alt="Third slide">
 
           <div class="container">
             <div class="carousel-caption">
@@ -191,7 +266,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_WOW.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="./assets/images/home_tile_Choir_static.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <h2>Heading</h2>
@@ -203,7 +278,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
 
         </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_baptism.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="./assets/images/home_tile_baptism_static.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <h2>Heading</h2>
@@ -215,7 +290,7 @@ h2 { font-family: "Nolan Next Bold" !important;  }
 
         </div><!-- /.col-lg-4 -->
         <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_CD.jpg" alt="Generic placeholder image" width="100%" height="200">
+          <img src="./assets/images/home_tile_WOWtea_161203.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
             <h2>Heading</h2>
@@ -227,45 +302,6 @@ h2 { font-family: "Nolan Next Bold" !important;  }
 
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-      <div class="row" style="margin-top: -28px;">
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_EFGB.jpg" alt="Generic placeholder image" width="100%" height="200">
-          
-          <div>
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-
-          </div>
-
-
-        </div><!-- /.col-lg-4 -->
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_GrowthGroups.jpg" alt="Generic placeholder image" width="100%" height="200">
-          
-          <div>
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-
-          </div>
-
-
-        </div><!-- /.col-lg-4 -->
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/tile_hospitality.jpg" alt="Generic placeholder image" width="100%" height="200">
-          
-          <div>
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-
-          </div>
-
-
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
 
      
 
