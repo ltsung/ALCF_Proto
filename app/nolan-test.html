@@ -43,7 +43,7 @@ h2 { font-family: "Nolan Next Bold" !important; color: rgba(40,0,145, 1); }
 
 h3 {
   font-family: "Nolan Next Bold" !important; 
-  font-size: 150%;
+  font-size: 130%;
   color: #555; 
 }
 
@@ -52,6 +52,13 @@ h3 {
   color: #555;
 }
 
+iframe {
+  border-radius: 6px;	
+}
+
+img {
+  border-radius: 4px;
+}
 
 .tile h2 { font-family: "Nolan Next Bold" !important; }
 
@@ -60,36 +67,37 @@ h3 {
 </style>
 
 <style>
+  #myCarousel a {
+	color: rgba(40,0,145, 1);  
+	font-weight: bold;
+  }
+
   #hero {
 	 height: 388px !important;
   }
   
   #hero-image {
-	 border-top: 3px solid rgba(40,0,145, 1);
-
-	 height: 450px !important;  
+    /*border-top: 3px solid rgba(40,0,145, 1);*/
+    background: url('../assets/images/page_HOME1_bw.jpg') center -30px no-repeat;
+    background-size: cover;
+	height: 450px !important;  
   }
 
   #hero-image:before {
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);
+   /* background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);*/
+    
+    background-color: rgba(30,0,135, 0.3);
   }
   
   .field {
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);	  
+ /*   background-image: linear-gradient(45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);	  */
   }
   
   #callouts {
     width: 100%;
-	height: 740px;
+	height: 820px;
     padding: 40px;
 
-    background: rgb(204,204,204); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(239,239,239,1) 3%, rgba(219,219,219,1) 57%, rgba(214,214,214,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(3%,rgba(239,239,239,1)), color-stop(57%,rgba(219,219,219,1)), color-stop(100%,rgba(214,214,214,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(239,239,239,1) 3%,rgba(219,219,219,1) 57%,rgba(214,214,214,1) 100%); /* W3C */
 
   }
   
@@ -103,7 +111,40 @@ h3 {
   #callouts h3 {
 	 margin-top: 20px;
 	 margin-bottom: 10px;
+	 line-height: 130%;
   }
+  
+  #soc-media li a {
+	 border: 1px solid #FFF;
+	 border-radius: 50px;
+	 padding: 8px 10px 5px 10px;
+	 text-align: center;
+	 font-size: 65%;
+	 position: relative;
+	 display: block;
+  }
+
+  
+  #soc-media li a:hover {
+	background: rgba(255,255,255,0.2);
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  
+.tile img {
+box-shadow: none;	      
+border-top: none; 
+border-left: none;
+border-right: none;
+
+}
+
+.tile div {
+padding: 10px;
+border: none;
+box-shadow: none;
+}
   
 
 </style>
@@ -159,7 +200,7 @@ h3 {
 	      </div>
 	      
 	      <div class="col-md-4 col-lg-4">
-            <h2>Pastor Bryan's Message</h2>
+            <h2>Welcome to ALCF!</h2>
             <p>New to ALCF?  Pastor Bryan Loritts has some thoughts to share.</p>                   
 	        <br>
             <img src="http://www.alcf.net/uploads/RSS_PastorsPen.jpg" style=" border-radius: 4px;">
@@ -167,29 +208,31 @@ h3 {
 	      </div>
 
         </div>
+        
+        <hr style="border: 1px solid rgba(40,0,145, 1); margin: 20px 30px; position: relative; top: 20px;">
 
         <div id="messages" class="col-md-12 col-lg-12">
            <h2>Latest Message Series</h2>
           
 	       <div class="col-md-4 col-lg-4">
 		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_InsanelyBusy_160501-29.jpg'); background-size: cover; border-radius: 4px;"></div>
-		      <div>
-                <h3>Insanely Busy</h3>
-                <p>What the Bible says about stewarding time.</p>            
+		      <div style="padding: 0px 15px;">
+                <h3> Insanely Busy: What The Bible Says About Stewarding Time</h3>
+                <p>4 Weeks: May 1–29</p>            
 		      </div>
 	       </div>
 	       <div class="col-md-4 col-lg-4">
 		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_Jonah_160403-24.jpg'); background-size: cover; border-radius: 4px;"></div>
-		      <div>
-                <h3>Jonah</h3>
-                <p>When God loves you enough to interrupt you.</p>            
+		      <div style="padding: 0px 15px;">
+                <h3>Jonah: When God Loves You Enough To Interrupt You</h3>
+                <p>4 Weeks: April 3–24</p>            
 		      </div>
 	       </div>
 	       <div class="col-md-4 col-lg-4">
 		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_Easter2016_160306-27.jpg'); background-size: cover; border-radius: 4px;"></div>
-		      <div>
-                <h3>First Things First</h3>
-                <p>Jesus Above Everything.</p>            
+		      <div style="padding: 0px 15px;">
+                <h3>First Things First: Jesus Above…Ministry, Religion, Happiness, Everything</h3>
+                <p>4 Weeks: March 6–27</p>            
 		      </div>
 	       </div>
 
@@ -215,9 +258,9 @@ h3 {
 
           <div class="container">
             <div class="carousel-caption">
-              <h2>Example headline.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h2>All Church Picnic</h2>
+              <p>Sunday, September 25 | Rengstorff Park</p>
+              <p>Join us for a fun-filled picnic and potluck full of laughter, food, games, and many opportunities to connect with others at Rengstorff Park in Mountain View. <a href="alcf.net/allchurchpicnic">alcf.net/allchurchpicnic</a></p>
             </div>
           </div>
         </div>
@@ -227,9 +270,9 @@ h3 {
 
           <div class="container">
             <div class="carousel-caption">
-              <h2>Example headline.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h2>Exploring Membership At ALCF</h2>
+              <p>Sunday, May 22, 12–1PM</p>
+              <p>Looking for a church home? At the next Exploring Membership At ALCF, meet Pastor Bryan and Pastor Eric and learn more about our history, mission and values. Sign up: <a href="alcf.net/membership">alcf.net/membership</a></p>
             </div>
           </div>
         </div>
@@ -238,10 +281,14 @@ h3 {
           <img class="third-slide" src="./assets/images/home_loop_GG_static.jpg" alt="Third slide">
 
           <div class="container">
-            <div class="carousel-caption">
-              <h2>Example headline.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            <div class="carousel-caption" style="position: absolute; top: 30px;">
+              <h2>ALCF Growth Groups Forming</h2>
+              <p>Growth Groups (GGs) are small group communities, of six to 12 people, who meet together regularly in homes throughout the Bay Area to: learn God’s Word, become a loving fellowship, provide spiritual care and encouragement, and look for ways to reach out to our community with the love of Jesus.</p>
+
+<!--
+<p>For immediate placement with a community of believers to connect with near you, click here for locations and descriptions.</p>
+-->
+<p>Contact: Carisa Hamilton | growthgroups@alcf.net | 650.625.1500, x133</p>
             </div>
           </div>
         </div>
@@ -269,9 +316,10 @@ h3 {
           <img src="./assets/images/home_tile_Choir_static.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <h2>9th Annual Christmas Tea</h2>
+            <p>Saturday, December 3, 10AM–1PM</p>
+            <p>A special time for ALCF women and friends to fellowship together in a beautifully decorated and welcoming atmosphere during the holiday season. Tickets available following Sunday service or online ($25/person | $200/table).</p>            
+            <p>Registration: alcf.net/2016tea | Information: women@alcf.net</p>
 
           </div>
 
@@ -281,9 +329,9 @@ h3 {
           <img src="./assets/images/home_tile_baptism_static.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <h2>Baptism</h2>
+            <p>Baptism is the public acknowledgment and affirmation of our commitment to Jesus Christ as Savior and Lord. We invite those seeking to follow the Lord’s example an opportunity to be water baptized once monthly during our Sunday Worship Celebration. Sign up for the next baptism orientation today!</p>            
+            <p>Contact: Pastor Eric Stevenson | baptism@alcf.net | 650.625.1500, xXXX</p>
 
           </div>
 
@@ -293,9 +341,10 @@ h3 {
           <img src="./assets/images/home_tile_WOWtea_161203.jpg" alt="Generic placeholder image" width="100%" height="200">
           
           <div>
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.</p>            
-            <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+            <h2>9th Annual Christmas Tea</h2>
+            <p>Saturday, December 3, 10AM–1PM</p>
+            <p>A special time for ALCF women and friends to fellowship together in a beautifully decorated and welcoming atmosphere during the holiday season. Tickets available following Sunday service or online ($25/person | $200/table).</p>
+            <p>Registration: alcf.net/2016tea | Information: women@alcf.net</p>
 
           </div>
 

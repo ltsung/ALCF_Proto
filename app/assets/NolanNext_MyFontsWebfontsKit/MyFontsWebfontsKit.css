@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3202553, 2016-04-11T23:53:03-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NolanNext-Light by Kastelov
+ * URL: http://www.myfonts.com/fonts/kastelov/nolan-next/light/
+ * 
+ * Webfont: NolanNext-Medium by Kastelov
+ * URL: http://www.myfonts.com/fonts/kastelov/nolan-next/medium/
+ * 
+ * Webfont: NolanNext-Regular by Kastelov
+ * URL: http://www.myfonts.com/fonts/kastelov/nolan-next/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3202553
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2015 by Galin Kastelov. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30ddf9");
+
+  
+@font-face {font-family: 'NolanNext-Light';src: url('webfonts/30DDF9_0_0.eot');src: url('webfonts/30DDF9_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30DDF9_0_0.woff2') format('woff2'),url('webfonts/30DDF9_0_0.woff') format('woff'),url('webfonts/30DDF9_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'NolanNext-Medium';src: url('webfonts/30DDF9_1_0.eot');src: url('webfonts/30DDF9_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30DDF9_1_0.woff2') format('woff2'),url('webfonts/30DDF9_1_0.woff') format('woff'),url('webfonts/30DDF9_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'NolanNext-Regular';src: url('webfonts/30DDF9_2_0.eot');src: url('webfonts/30DDF9_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30DDF9_2_0.woff2') format('woff2'),url('webfonts/30DDF9_2_0.woff') format('woff'),url('webfonts/30DDF9_2_0.ttf') format('truetype');}
+ 
