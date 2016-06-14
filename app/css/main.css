@@ -1,5 +1,23 @@
+@font-face {
+  font-family: NolanReg;
+  src: url('../assets/Nolan/nolan_reg.ttf');
+}
+
+@font-face {
+  font-family: NolanMed;
+  src: url('../assets/Nolan/nolan_med.ttf');
+}
+
+
+@font-face {
+  font-family: NolanLight;
+  src: url('../assets/Nolan/nolan_light.ttf');
+}
+
+
+
 body {
-  font-family: OpenSans, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: NolanReg, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 a:focus {
@@ -13,7 +31,7 @@ a:focus {
 .nav li a {
   color: #FFF !important;
   padding: 10px 30px;
-  font-family: "Nolan Next Bold" !important;  
+  font-family: NolanMed !important;  
 }
 
 .nav li a:first-child {
@@ -223,19 +241,37 @@ font-size: 90%;
 margin-top: 10px;
 }
 
-.tile img {
-box-shadow: 0 0 5px #CCC;	      
-border-top: 3px solid rgba(40,0,145, 1); 
-border-left: 1px solid #CCC;
-border-right: 1px solid #CCC;
 
-}
 
-.tile div {
-padding: 10px;
-border: 1px solid #CCC;
-box-shadow: 0 0 5px #CCC;
-}
+      .tile img {
+	     box-shadow: none;
+	       border: 1px solid #DDD;
+      }	   
+
+      img {
+	    border-radius: 4px;
+	  
+      }
+   
+	
+      .tile div {
+        padding: 10px;
+        border: none;
+        box-shadow: none;
+      }
+	  
+	  .btn-default {
+        color: #333;
+        background-color: #EEE;
+        border-radius: 20px;
+        border: none;
+      }
+      
+      .tile .more {
+	    border-radius: 10px;
+	    border: none;
+      }
+   
 
 .carousel-caption {
   right: 10%;
