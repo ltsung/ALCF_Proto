@@ -66,9 +66,7 @@ img {
 
 .field { font-family: NolanReg !important; }
 
-</style>
-
-<style>
+ 
   #myCarousel a {
 	color: rgba(40,0,145, 1);  
 	font-weight: bold;
@@ -97,7 +95,6 @@ img {
   
   #callouts {
     width: 100%;
-	height: 820px;
     padding: 40px;
 
 
@@ -161,16 +158,26 @@ box-shadow: none;
     <div id="hero">
       
       <div class="container" style="top: 155px; left: 8px; position: absolute; z-index: 2; ">
-        <div class="col-md-6 col-lg-6">              
+        <div class="col-sm-6 col-md-6">              
           <h1>An exciting<br>fellowship of<br>growing believers.</h1><br>
           <h5>Sunday 10 AM</h5>
           <h6>2440 Leghorn St. Mountain View, CA</h6>
         </div>
-        <div class="col-md-6 col-lg-6"></div> 
+        <div class="col-sm-6 col-md-6"></div> 
       </div>
       
+      
+      
+      <!--
+       
+       Experiment with white icons
+        
+      -->
+      
+      
+      
       <div class="container" style="top: 365px; padding-left: 0; position: absolute; z-index: 2; width: 100%;">
-        <div class="col-md-6 col-lg-6" style="padding-left: 0;">              
+        <div class="col-sm-6 col-sm-6" style="padding-left: 0;">              
           <ul id="soc-media" class="ss-icon">
             <li><a href="https://www.facebook.com/ALCF">&#xF610;</a></li>
             <li><a href="https://twitter.com/alcf">&#xF611;</a></li>
@@ -179,7 +186,7 @@ box-shadow: none;
             <li><a href="http://bryanloritts.tumblr.com/">&#xF620;</a></li>
           </ul>
         </div>
-        <div class="col-md-6 col-lg-6" style="text-align: right; padding-right: 25px;">
+        <div class="col-sm-6 col-sm-6" style="text-align: right; padding-right: 25px;">
           <form class="w-clearfix hero-cta-form" id="wf-form-Newsletter" name="wf-form-Newsletter" data-name="Newsletter">
             <input class="w-input field" type="email" placeholder="Enter your email for weekly updates" name="email" data-name="Email" required="required">
             <input class="w-button button hero-button" type="submit" value="Subscribe" data-wait="Please wait...">
@@ -195,17 +202,20 @@ box-shadow: none;
 
     <div class="container" id="callouts">
       <div class="row">
-        <div class="col-md-12 col-lg-12">
+        <div class="col-sm-12 col-md-12">
 
-	      <div class="col-md-8 col-lg-8">
-            <iframe width="680" height="360" src="https://www.youtube.com/embed/59FiaN6MbjE" frameborder="0" style="margin-bottom: 10px;" allowfullscreen></iframe> 
+	      <div class="col-sm-8 col-md-8">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/59FiaN6MbjE" frameborder="0" style="margin-bottom: 10px;" allowfullscreen></iframe> 
 	      </div>
 	      
-	      <div class="col-md-4 col-lg-4">
+	      <div class="col-sm-4 col-md-4">
             <h2>Welcome to ALCF!</h2>
+            
+            
+            
             <p>New to ALCF?  Pastor Bryan Loritts has some thoughts to share.</p>                   
 	        <br>
-            <img src="http://www.alcf.net/uploads/RSS_PastorsPen.jpg" style=" border-radius: 4px;">
+            <img src="http://www.alcf.net/uploads/RSS_PastorsPen.jpg" style=" border-radius: 4px; width: 100%;">
 
 	      </div>
 
@@ -213,24 +223,24 @@ box-shadow: none;
         
         <hr style="border: 1px solid rgba(40,0,145, 1); margin: 20px 30px; position: relative; top: 20px;">
 
-        <div id="messages" class="col-md-12 col-lg-12">
+        <div id="messages" class="col-sm-12 col-md-12">
            <h2>Latest Message Series</h2>
           
-	       <div class="col-md-4 col-lg-4">
+	       <div class="col-sm-4 col-md-4">
 		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_InsanelyBusy_160501-29.jpg'); background-size: cover; border-radius: 4px;"></div>
 		      <div style="padding: 0px 15px;">
                 <h3> Insanely Busy: What The Bible Says About Stewarding Time</h3>
                 <p>4 Weeks: May 1–29</p>            
 		      </div>
 	       </div>
-	       <div class="col-md-4 col-lg-4">
+	       <div class="col-sm-4 col-md-4">
 		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_Jonah_160403-24.jpg'); background-size: cover; border-radius: 4px;"></div>
 		      <div style="padding: 0px 15px;">
                 <h3>Jonah: When God Loves You Enough To Interrupt You</h3>
                 <p>4 Weeks: April 3–24</p>            
 		      </div>
 	       </div>
-	       <div class="col-md-4 col-lg-4">
+	       <div class="col-sm-4 col-md-4">
 		      <div style="height: 150px; width: 100%; background-image: url('./assets/images/home_series_Easter2016_160306-27.jpg'); background-size: cover; border-radius: 4px;"></div>
 		      <div style="padding: 0px 15px;">
                 <h3>First Things First: Jesus Above…Ministry, Religion, Happiness, Everything</h3>
@@ -255,35 +265,49 @@ box-shadow: none;
       <div class="carousel-inner" role="listbox">
         <div class="item active">
         
-        
-          <img class="first-slide" src="./assets/images/home_loop_ChurchPicnic.jpg" alt="First slide">
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h2>All Church Picnic</h2>
-              <p>Sunday, September 25 | Rengstorff Park</p>
-              <p>Join us for a fun-filled picnic and potluck full of laughter, food, games, and many opportunities to connect with others at Rengstorff Park in Mountain View. <a href="alcf.net/allchurchpicnic">alcf.net/allchurchpicnic</a></p>
-            </div>
+         <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <img class="first-slide" src="./assets/images/home_loop_ChurchPicnic.jpg" alt="First slide" width="100%" height="100%">
           </div>
+
+          <div class="col-sm-6 col-md-6 caption">
+            <h2>All Church Picnic</h2>
+            <p>Sunday, September 25 | Rengstorff Park</p>
+            <p>Join us for a fun-filled picnic and potluck full of laughter, food, games, and many opportunities to connect with others at Rengstorff Park in Mountain View. <a href="alcf.net/allchurchpicnic">alcf.net/allchurchpicnic</a></p>
+          </div>
+        
+         </div>
+                    
         </div>
+
+        
+        
         <div class="item">
+        
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
 
-          <img class="second-slide" src="./assets/images/home_loop_expmbrship.jpg" alt="Second slide">
+              <img class="second-slide" src="./assets/images/home_loop_expmbrship.jpg" alt="Second slide" width="100%" height="100%">
+            </div>
 
-          <div class="container">
-            <div class="carousel-caption">
+            <div class="col-sm-6 cold-md-6 caption">
               <h2>Exploring Membership At ALCF</h2>
               <p>Sunday, May 22, 12–1PM</p>
               <p>Looking for a church home? At the next Exploring Membership At ALCF, meet Pastor Bryan and Pastor Eric and learn more about our history, mission and values. Sign up: <a href="alcf.net/membership">alcf.net/membership</a></p>
             </div>
+          
           </div>
+          
         </div>
         <div class="item">
-
-          <img class="third-slide" src="./assets/images/home_loop_GG_static.jpg" alt="Third slide">
-
-          <div class="container">
-            <div class="carousel-caption" style="position: absolute; top: 30px;">
+        
+          <div class="row">
+            
+            <div class="col-sm-6 col-md-6">
+              <img class="third-slide" src="./assets/images/home_loop_GG_static.jpg" alt="Third slide" width="100%" height="100%">
+            </div>
+ 
+            <div class="col-sm-6 col-md-6 caption">
               <h2>ALCF Growth Groups Forming</h2>
               <p>Growth Groups (GGs) are small group communities, of six to 12 people, who meet together regularly in homes throughout the Bay Area to: learn God’s Word, become a loving fellowship, provide spiritual care and encouragement, and look for ways to reach out to our community with the love of Jesus.</p>
 
@@ -291,8 +315,10 @@ box-shadow: none;
 <p>For immediate placement with a community of believers to connect with near you, click here for locations and descriptions.</p>
 -->
 <p>Contact: Carisa Hamilton | growthgroups@alcf.net | 650.625.1500, x133</p>
-            </div>
           </div>
+          
+          </div>
+          
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -313,9 +339,9 @@ box-shadow: none;
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/home_tile_Choir_static.jpg" alt="Generic placeholder image" width="100%" height="200">
+      <div class="col-sm-12 col-md-12">
+        <div class="tile news-event col-sm-4 col-md-4">
+          <img src="./assets/images/home_tile_Choir_static.jpg" alt="Generic placeholder image" width="100%" height="100%">
           
           <div>
             <h2>9th Annual Christmas Tea</h2>
@@ -326,9 +352,9 @@ box-shadow: none;
           </div>
 
 
-        </div><!-- /.col-lg-4 -->
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/home_tile_baptism_static.jpg" alt="Generic placeholder image" width="100%" height="200">
+        </div><!-- /.col-md-4 -->
+        <div class="tile news-event col-sm-4 col-md-4">
+          <img src="./assets/images/home_tile_baptism_static.jpg" alt="Generic placeholder image" width="100%" height="100%">
           
           <div>
             <h2>Baptism</h2>
@@ -338,9 +364,9 @@ box-shadow: none;
           </div>
 
 
-        </div><!-- /.col-lg-4 -->
-        <div class="tile news-event col-md-4 col-lg-4">
-          <img src="./assets/images/home_tile_WOWtea_161203.jpg" alt="Generic placeholder image" width="100%" height="200">
+        </div><!-- /.col-md-4 -->
+        <div class="tile news-event col-sm-4 col-md-4">
+          <img src="./assets/images/home_tile_WOWtea_161203.jpg" alt="Generic placeholder image" width="100%" height="100%">
           
           <div>
             <h2>9th Annual Christmas Tea</h2>
@@ -351,7 +377,7 @@ box-shadow: none;
           </div>
 
 
-        </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-md-4 -->
       </div><!-- /.row -->
 
      
@@ -374,7 +400,7 @@ box-shadow: none;
       <div class="modal-body">
 
         <div class="row">
-          <div class="col-md-5 col-lg-5">
+          <div class="col-sm-5 col-md-5">
 			
 			<h3>Ways to Volunteer at NCHM</h3>
             <ul>
@@ -403,7 +429,7 @@ Executive Director<br>
 	 	          
           </div>
 			
-          <div class="col-md-7 col-lg-7">
+          <div class="col-sm-7 col-md-7">
 			<iframe width="500px" height="300px" src="https://www.youtube.com/embed/sm-NjYuEKus" frameborder="0" allowfullscreen></iframe>	          
           </div>
 	        
